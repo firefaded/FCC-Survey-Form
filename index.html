@@ -7,6 +7,54 @@
         <link href="assets/css/style.css" rel="stylesheet">
     </head>
     <body>
-    
+        <div class="main">
+            <div class="header">
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Let us know how we are doing!</p>
+            </div>
+            <form id="survey-form">
+                <label id="name-label">*Name:</label>
+                <input type="text" name="name" id="name" placeholder="enter your name" required><br>
+                <label id="email-label">*Email:</label>
+                <input type="email" name="email" id="email" placeholder="enter your email" required><br>
+                <label id="number-label">*Age:</label>
+                <input type="number" name="age" id="number" placeholder="Age" min="1" max="125"><br>
+                What option best describes your current role?
+                <select id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>  
+                    <option value="part-time-job">Part Time Job</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                    <option value="other">Other</option>  
+                </select>
+                <br>
+                * How likely is it that you would recommend us to a friend?<br>
+                <input type="radio" name="name" id="definitely" value="definitely">
+                <label for="definitely">Definitely</label><br>
+                <input type="radio" name="name" id="maybe" value="maybe">
+                <label for="maybe">Maybe</label> <br>
+                <input type="radio" name="name" id="not sure" value="not sure">
+                <label for="not sure">Not Sure</label><br>
+                What do you like most about the school?
+                <select>
+                    <option value="classes">Classes</option>
+                    <option value="projects">Projects</option>
+                    <option value="job-board">Job Board</option>
+                    <option value="student-events">Student Events</option>
+                </select>
+                <br>
+                Things that should be improved in the future (Check all that apply): <br>
+                <input type="checkbox" name="improve" value="classes">Classes <br>
+                <input type="checkbox" name="improve" value="student-events">Student Events <br>
+                <input type="checkbox" name="improve" value="job-opportunites">Job Opportunites <br>
+                <input type="checkbox" name="improve" value="student-life">Student Life <br>
+                <br>
+                Any comments or suggestions?
+                <textarea rows="4" cols="50"></textarea>
+                <br>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+        <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
     </body>
 </html>
